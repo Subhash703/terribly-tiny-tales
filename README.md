@@ -39,7 +39,7 @@ You can see a landing page in the browser having an input box with some nice ani
 
 ### Components of the code
 
--- When you run the server in backend, it will start on PORT 5000 by default. The API in backend takes request from frontend in the form Array of rollNumbers.
+-- + When you run the server in backend, it will start on PORT 5000 by default. The API in backend takes request from frontend in the form Array of rollNumbers.
 -- After that we make an async request to the external API `https://terriblytinytales.com/testapi?rollnumber=${X}` one by one for each element of the rollNumbers array.
 -- We return the results (Pass/Fail) Array to front-end.
 
