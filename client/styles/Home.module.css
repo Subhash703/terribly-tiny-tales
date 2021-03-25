@@ -67,6 +67,9 @@ table.result_table th {
 .result_table tr td.fail {
   color: #ff0000;
 }
+.result_table tr td.pass {
+  color: #1fd455;
+}
 /* Animations */
 .boxes {
   position: absolute;

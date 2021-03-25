@@ -1,5 +1,8 @@
 const express = require('express')
 const axios = require('axios')
+const dotenv = require('dotenv')
+
+dotenv.config()
 var cors = require('cors')
 // CORS : security berrier : we can send request from anywhere now
 const app = express()
@@ -33,7 +36,7 @@ app.post('/fetchResult', async (req, res) => {
   res.send(results)
 })
 
-const port = 5000
+const port = process.env.PORT || 5000
 
 app.listen(port, () => {
   console.log('Server has started again :' + port)

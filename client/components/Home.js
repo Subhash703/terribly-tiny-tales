@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import axios from 'axios'
+import { API_URL } from '../config'
 
 export default function App() {
   const [rollNumbers, setRollNumbers] = useState([])
@@ -15,7 +16,7 @@ export default function App() {
     setLoading(true)
     // Making a post request to the API
     const result = await axios.post(
-      'http://localhost:5000/fetchResult',
+      `${API_URL}/fetchResult`,
       {
         rollNumbers: arr,
       },
@@ -63,7 +64,7 @@ export default function App() {
         <thead>
           <tr>
             <th>Roll Number</th>
-            <th>Response From Server</th>
+            <th>Results</th>
           </tr>
         </thead>
         <tbody>
@@ -72,7 +73,11 @@ export default function App() {
                 return (
                   <tr key={index}>
                     <td>{item.rollNumber}</td>
-                    <td className={item.result == 'Fail' ? styles.fail : null}>
+                    <td
+                      className={
+                        item.result == 'Fail' ? styles.fail : styles.pass
+                      }
+                    >
                       {item.result}
                     </td>
                   </tr>
