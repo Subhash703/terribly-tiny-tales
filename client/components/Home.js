@@ -72,7 +72,9 @@ export default function App() {
                 return (
                   <tr key={index}>
                     <td>{item.rollNumber}</td>
-                    <td>{item.result}</td>
+                    <td className={item.result == 'Fail' ? styles.fail : null}>
+                      {item.result}
+                    </td>
                   </tr>
                 )
               })

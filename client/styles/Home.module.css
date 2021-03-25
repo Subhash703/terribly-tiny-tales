@@ -64,7 +64,9 @@ table.result_table th {
 .result_table tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+.result_table tr td.fail {
+  color: #ff0000;
+}
 /* Animations */
 .boxes {
   position: absolute;
