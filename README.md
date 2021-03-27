@@ -10,12 +10,12 @@
 
 ### Technologies and Libraries/dependencies used
 
-- Front-end
+- Front-end (Deployed at vercel.app)
 
   - NextJS
   - axios
 
-- Backend
+- Backend (Deployed at Heroku)
   - Nodejs
   - express framework
   - axios
@@ -27,9 +27,9 @@
   - Open the project in your favroite code editor
   - Open 2 terminals, 1st to run the front-end code on `PORT 3000` and second to run server on `PORT 5000` (Make sure the PORT is not being utilized somewhere else)
   - #### Run the following commands
-  - For front end run : `npm or yarn install`. It will install all the dependencies and will create a gient node_modules folder
+  - For front end run : `yarn install`. It will install all the dependencies and will create a gient node_modules folder
   - `yarn run dev` to start front-end application in browser.
-  - For backend run : `npm or yarn install`. (Make sure your are in backend directory).
+  - For backend run : `yarn install`. (Make sure your are in backend directory).
   - `nodemon start` To start the server (Make sure you are in backend directory)
   - ## That's it! We are ready to go and test the application
 
